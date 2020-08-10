@@ -131,7 +131,7 @@ class Detail extends StatelessWidget {
             Text(
               "CHARACTERS",
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 25,
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
               ),
@@ -155,13 +155,25 @@ class Detail extends StatelessWidget {
                         Icons.local_movies,
                         size: 40,
                       ),
-                      Text(
-                        "Watch Anime",
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.black,
-                          fontWeight: FontWeight.w500,
-                        ),
+                      Column(
+                        children: <Widget>[
+                          Text(
+                            "Watch Now!",
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Text(
+                            "(" + numEpisodes + "  " + "Episodes)",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -178,13 +190,25 @@ class Detail extends StatelessWidget {
                         Icons.card_giftcard,
                         size: 40,
                       ),
-                      Text(
-                        "Read Manga",
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.black,
-                          fontWeight: FontWeight.w500,
-                        ),
+                      Column(
+                        children: <Widget>[
+                          Text(
+                            "Read Manga",
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Text(
+                            "(" + numEpisodes + "  " + "Chapters)",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
