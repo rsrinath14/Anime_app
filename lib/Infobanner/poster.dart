@@ -36,6 +36,7 @@ class ClippingClass extends CustomClipper<Path> {
     path.quadraticBezierTo((size.width - size.width / 4), size.height,
         size.width, size.height - 100);
     path.lineTo(size.width, 0);
+    path.close();
 
     return path;
   }
