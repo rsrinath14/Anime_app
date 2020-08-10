@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'Infobanner/poster.dart';
 import 'descriptionBox/descriptionBox.dart';
+import 'Characters/Characterstile.dart';
 
 String animetitle = 'Naruto Shippuden';
 
@@ -127,6 +128,69 @@ class Detail extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
+            Text(
+              "CHARACTERS",
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            Characters(),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      Icon(
+                        Icons.local_movies,
+                        size: 40,
+                      ),
+                      Text(
+                        "Watch Anime",
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      Icon(
+                        Icons.card_giftcard,
+                        size: 40,
+                      ),
+                      Text(
+                        "Read Manga",
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
